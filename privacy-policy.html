@@ -3,121 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - PhotoShift Cleaner</title>
+    <title>Privacy Policy — Gallery Cleaner Swipe Photos</title>
+    <meta name="description" content="Privacy policy for Gallery Cleaner Swipe Photos — on-device processing, no third-party servers, no data collection.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    <link rel="apple-touch-icon" href="assets/logo.png">
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Simple Header -->
-    <header class="simple-header">
-        <div class="container">
-            <a href="index.html" class="back-button">
-                <i class="fas fa-arrow-left"></i>
-                Back to Home
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo-link">
+                <img src="assets/logo.png" alt="Gallery Cleaner logo" class="nav-logo">
+                <span class="nav-logo-text">Gallery <span class="text-accent">Cleaner</span></span>
             </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#features" class="nav-link">Features</a></li>
+                <li><a href="index.html#download" class="nav-link">Download</a></li>
+                <li><a href="privacy-policy.html" class="nav-link">Privacy</a></li>
+                <li><a href="support.html" class="nav-link">Support</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </header>
+    </nav>
 
-    <!-- Privacy Policy Content -->
-    <section class="privacy-policy-page">
+    <section class="page-hero">
         <div class="container">
-            <div class="privacy-content">
-                <h1>Privacy Policy</h1>
-                <p class="last-updated">Last updated: December 2024</p>
-                
-                <div class="policy-section">
-                    <h2>Introduction</h2>
-                    <p>PhotoShift Cleaner ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how our app handles your information and what rights you have regarding your data.</p>
+            <span class="section-badge">Legal</span>
+            <h1 class="section-title">Privacy <span class="gradient-text">Policy</span></h1>
+            <p class="section-subtitle">Last updated: May 2026</p>
+        </div>
+    </section>
+
+    <section class="page-content-section">
+        <div class="content-wrapper">
+            <div class="privacy-section">
+                <h2>Overview</h2>
+                <p>Gallery Cleaner Swipe Photos is built on a simple principle: your photos are yours. The app processes everything on your device, asks for the minimum permissions needed to do its job, and never uploads your gallery to a server we operate.</p>
+                <div class="highlight-box">
+                    <p><strong>TL;DR:</strong> No accounts. No photo uploads. Photo access stays on-device. Nothing is deleted without your confirmation. Items removed go to your iOS Recently Deleted album for 30 days.</p>
                 </div>
+            </div>
 
-                <div class="policy-section">
-                    <h2>No Data Collection</h2>
-                    <p><strong>We do not collect, store, or transmit any of your personal data, photos, or information.</strong></p>
-                    <p>PhotoShift Cleaner processes all your photos entirely on your device using on-device AI technology. Your photos never leave your device and are never sent to our servers or any third-party services.</p>
-                </div>
+            <div class="privacy-section">
+                <h2>Photo Library Access</h2>
+                <p>The app requests access to your photo library so it can show you the items you want to review — screenshots, similar photos, large files, or your full camera roll. Photos are read on-device only.</p>
+                <ul>
+                    <li>Photos are <strong>never uploaded</strong> to a server we run.</li>
+                    <li>Similar-photo and large-file detection happens locally on your iPhone.</li>
+                    <li>You can grant full or limited library access in iOS Settings → Privacy & Security → Photos.</li>
+                </ul>
+            </div>
 
-                <div class="policy-section">
-                    <h2>How Our App Works</h2>
-                    <ul>
-                        <li><strong>On-Device Processing:</strong> All photo analysis, filtering, and organization happens locally on your device</li>
-                        <li><strong>No Internet Required:</strong> The app works completely offline and does not require an internet connection</li>
-                        <li><strong>No Account Creation:</strong> You can start using the app immediately without creating any accounts</li>
-                        <li><strong>No Data Transmission:</strong> Your photos and personal information are never uploaded or transmitted</li>
-                    </ul>
-                </div>
+            <div class="privacy-section">
+                <h2>How Deletion Works</h2>
+                <p>When you swipe to remove a photo, it lands in an in-app review basket — nothing is deleted yet. Only after you confirm the final delete step does the app ask iOS to move those items to the system Recently Deleted album.</p>
+                <ul>
+                    <li>Removed items remain in iOS Recently Deleted for 30 days by default.</li>
+                    <li>You can restore anything from Photos → Albums → Recently Deleted at any time during that window.</li>
+                    <li>The app itself does not keep a separate copy of any photo you remove.</li>
+                </ul>
+            </div>
 
-                <div class="policy-section">
-                    <h2>Information We Do Not Collect</h2>
-                    <p>We want to be completely clear about what we do not collect:</p>
-                    <ul>
-                        <li>Your photos or images</li>
-                        <li>Personal information</li>
-                        <li>Contact information</li>
-                        <li>Device identifiers</li>
-                        <li>Usage analytics</li>
-                        <li>Location data</li>
-                        <li>Any other personal data</li>
-                    </ul>
-                </div>
+            <div class="privacy-section">
+                <h2>Data We Don't Collect</h2>
+                <p>The app is not built around tracking you. We do not collect:</p>
+                <ul>
+                    <li>Your photos or video content</li>
+                    <li>Personal identifiers like name, address, or phone number</li>
+                    <li>Contact lists or message history</li>
+                    <li>Location data</li>
+                    <li>Browsing history outside the app</li>
+                </ul>
+            </div>
 
-                <div class="policy-section">
-                    <h2>Third-Party Services</h2>
-                    <p>PhotoShift Cleaner does not integrate with any third-party services that would collect your data. The app operates independently and does not share information with external parties.</p>
-                </div>
+            <div class="privacy-section">
+                <h2>In-App Purchases (Pro)</h2>
+                <p>The Pro upgrade is processed entirely through Apple's App Store. We never see your payment information — Apple handles billing, receipts, and refunds under their standard terms. Restoring a purchase uses the same Apple ID that bought it.</p>
+            </div>
 
-                <div class="policy-section">
-                    <h2>Data Storage</h2>
-                    <p>Since we do not collect any data, there is no data storage on our servers. Any temporary data created during the photo cleaning process is stored locally on your device and can be completely removed by uninstalling the app.</p>
-                </div>
+            <div class="privacy-section">
+                <h2>Analytics & Crash Reports</h2>
+                <p>The app may collect anonymized diagnostic information (crash reports, generic usage events) to help us fix bugs and improve the swipe flow. This data:</p>
+                <ul>
+                    <li>Contains <strong>no photo content</strong>, file names, or personal identifiers.</li>
+                    <li>Is governed by Apple's App Tracking Transparency — you can opt out anytime in iOS Settings → Privacy & Security → Tracking.</li>
+                    <li>Is used to improve the product, not to build a profile of you.</li>
+                </ul>
+            </div>
 
-                <div class="policy-section">
-                    <h2>Your Rights</h2>
-                    <p>Since we do not collect or store any of your data, you have complete control over your information:</p>
-                    <ul>
-                        <li>Your photos remain on your device at all times</li>
-                        <li>You can stop using the app at any time</li>
-                        <li>Uninstalling the app removes all temporary data</li>
-                        <li>No data recovery is needed since no data is stored</li>
-                    </ul>
-                </div>
+            <div class="privacy-section">
+                <h2>Third-Party Services</h2>
+                <p>The app does not share your photos with third parties. Any service used for crash reporting or anonymized analytics receives only aggregated, non-personal information about app stability and usage patterns.</p>
+            </div>
 
-                <div class="policy-section">
-                    <h2>Children's Privacy</h2>
-                    <p>Our app does not knowingly collect any personal information from children under 13. Since we do not collect any data, there are no concerns about children's privacy.</p>
-                </div>
+            <div class="privacy-section">
+                <h2>Children's Privacy</h2>
+                <p>Gallery Cleaner Swipe Photos is intended for general audiences and is not directed at children under 13. We do not knowingly collect personal information from children.</p>
+            </div>
 
-                <div class="policy-section">
-                    <h2>Changes to This Privacy Policy</h2>
-                    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last updated" date.</p>
-                </div>
+            <div class="privacy-section">
+                <h2>Your Rights</h2>
+                <p>Because the app is local-first, you control your data directly:</p>
+                <ul>
+                    <li>Revoke photo access from iOS Settings at any time.</li>
+                    <li>Restore items from iOS Recently Deleted within 30 days.</li>
+                    <li>Withdraw analytics consent from iOS Settings → Privacy & Security → Tracking.</li>
+                    <li>Uninstall the app to remove all local app data.</li>
+                </ul>
+            </div>
 
-                <div class="policy-section">
-                    <h2>Contact Us</h2>
-                    <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us at:</p>
-                    <div class="contact-info">
-                        <p><strong>Email:</strong> 7oughapps1@gmail.com</p>
-                        <p><strong>Subject:</strong> Privacy Policy Inquiry</p>
-                    </div>
-                </div>
+            <div class="privacy-section">
+                <h2>Compliance</h2>
+                <p>This privacy policy is written to align with:</p>
+                <ul>
+                    <li>Apple App Store Review Guidelines</li>
+                    <li>General Data Protection Regulation (GDPR)</li>
+                    <li>California Consumer Privacy Act (CCPA)</li>
+                </ul>
+            </div>
 
-                <div class="policy-section">
-                    <h2>Compliance</h2>
-                    <p>This Privacy Policy complies with:</p>
-                    <ul>
-                        <li>Apple App Store Guidelines</li>
-                        <li>General Data Protection Regulation (GDPR)</li>
-                        <li>California Consumer Privacy Act (CCPA)</li>
-                        <li>Other applicable privacy laws and regulations</li>
-                    </ul>
-                </div>
+            <div class="privacy-section">
+                <h2>Changes to This Policy</h2>
+                <p>If this policy changes materially, the update will be reflected here and the "Last updated" date at the top will change. Continued use of the app after a change means you accept the updated policy.</p>
+            </div>
 
+            <div class="privacy-section">
+                <h2>Contact</h2>
+                <p>Questions about this policy? Reach us at <a href="mailto:7oughapps1@gmail.com" style="color: var(--accent-primary); font-weight: 600;">7oughapps1@gmail.com</a>.</p>
+            </div>
 
+            <div class="page-footer-links">
+                <a href="index.html">Home</a>
+                <span class="divider">|</span>
+                <a href="support.html">Support</a>
             </div>
         </div>
     </section>
 
-
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-wrap">
+                        <img src="assets/logo.png" alt="Gallery Cleaner logo" class="footer-logo-img">
+                        <span class="footer-brand-name">Gallery Cleaner</span>
+                    </div>
+                    <p class="footer-tagline">Swipe Photos to free up iPhone storage. Review screenshots, large files, and similar photos with control.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-column">
+                        <h4>App</h4>
+                        <a href="index.html#features">Features</a>
+                        <a href="index.html#download">Download</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                        <a href="support.html">Support</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Gallery Cleaner Swipe Photos. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
